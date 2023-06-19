@@ -7,10 +7,14 @@ const Header = ( { children } ) => {
     return (
         <ParallaxBanner
             layers={[
-                { image: '/assets/structure/preview.jpg', speed: -60 },
+                {
+                    image: '/assets/structure/preview.jpg',
+                    speed: -60,
+                    scale: [0.7, 0.7, "easeOutCubic"]
+                },
                 { image: '/assets/structure/check_cover.png', speed: -10 },
             ]}
-            className="aspect-[2/1] header-box"
+            className="header-box"
         >
             <div className="header absolute bottom-0 flex">
                 <div className="header-logo basis-1/2">
